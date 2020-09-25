@@ -15,36 +15,90 @@ h3::before{
 }
 .skills.skills-primary div{ 
     width: 100%;
+    height: 30px;
     background-color: #ddd;
      margin: 3px;
      line-height: 30px;
-     padding-left: 5px; 
+     padding: 5px;    
  }
- .skills.skills-primary span{
-     color: white;
-     background: red;
-     font-size: 20px;  
-       
+.skills.skills.skills-primary [data-skill="5"] span{ 
+    width: 50%;
+    color: white;
+    background-color: red;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px; 
+    display: inline-block;    
+ }
+ .skills.skills.skills-primary [data-skill="3"] span{ 
+    width: 30%;
+    color: white;
+    background-color: red;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px; 
+    display: inline-block;    
+ }
+ .skills.skills.skills-primary [data-skill="1"] span{ 
+    width: 10%;
+    color: white;
+    background-color: red;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px; 
+    display: inline-block;    
  }
  .skills.skills-secondary div{ 
     width: 100%;
+    height: 30px;
     background-color: #ddd;
-    opacity: 0.8; 
-    margin: 3px;
+     margin: 3px;
+     line-height: 30px;
+     padding: 5px;    
+ }
+ .skills.skills.skills-secondary [data-skill="9"] span{ 
+    width: 90%;
+    color: white;
+    background-color: red;
+    text-align: left;
+    height: 30px;
     line-height: 30px;
     padding-left: 5px; 
-}
-.skills.skills-secondary span{
+    display: inline-block;
+    
+ }
+ .skills.skills.skills-secondary [data-skill="5"] span{ 
+    width: 50%;
     color: white;
-    background: red;
-    font-size: 20px;  
-     
-}
+    background-color: red;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px; 
+    display: inline-block;    
+ }
+ .skills.skills.skills-secondary [data-skill="7"] span{ 
+    width: 70%;
+    color: white;
+    background-color: red;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px; 
+    display: inline-block;    
+ }
 .skills.skills-primary::before{
-    width:100%; height:10px; content:"Main" 
+    content:"Main";
+    width:100%; 
+    height:10px; 
 }
 .skills.skills-secondary::before{
-    width:100%; height:10px; content:"Other" 
+    width:100%; 
+    height:10px; 
+    content:"Other" 
 }
 .experience-type{
     font-weight: bold;
@@ -108,14 +162,15 @@ dd{
 
 
 @media only screen and (min-width: 720px){
-
+body{
+    width: 100%;
+}
     header{
-        width: 80%;
+        width: 90.4%;
         height: 200px;
         float: left;  
-        padding: 20px;  
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-top: 20px;  
+        padding-left: 130px;
     }
     hgroup{
         float: left;
@@ -127,17 +182,28 @@ dd{
     }
     .content{
         padding: 100px;
-        width: 80%;
+        padding-left: 200px;
+        width: 70%;
+    }
+    section h3::after{ 
+        content: "";
+        display: block;
+        margin: 5px -95px;
+        border-bottom: 1px solid lightgray;
     }
     #about{
         float: left;
         width: 40%;
-        height: 170px;
+        height: 190px;
+        padding-bottom: 50px;
+        margin-right: 160px;
     }
     #competencies{
         float: right;
         width: 40%;
-        height: 320px;  
+        height: 340px;  
+        padding-bottom: 50px;
+        margin-left: 10px;
     }
     #experiences{
         float: left;
