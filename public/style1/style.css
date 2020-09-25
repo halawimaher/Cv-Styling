@@ -1,0 +1,183 @@
+body{
+    background-color: white;
+}
+header{
+    background: grey;
+    color: red;
+}
+h3::before{
+    content: attr(title) "";
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+.skills.skills-primary div{ 
+    width: 100%;
+    background-color: #ddd;
+     margin: 3px;
+     line-height: 30px;
+     padding-left: 5px; 
+ }
+ .skills.skills-primary span{
+     color: white;
+     background: red;
+     font-size: 20px;  
+       
+ }
+ .skills.skills-secondary div{ 
+    width: 100%;
+    background-color: #ddd;
+    opacity: 0.8; 
+    margin: 3px;
+    line-height: 30px;
+    padding-left: 5px; 
+}
+.skills.skills-secondary span{
+    color: white;
+    background: red;
+    font-size: 20px;  
+     
+}
+.skills.skills-primary::before{
+    width:100%; height:10px; content:"Main" 
+}
+.skills.skills-secondary::before{
+    width:100%; height:10px; content:"Other" 
+}
+.experience-type{
+    font-weight: bold;
+    color: red;
+}
+.experience-institution{
+    color: red;
+    font-weight: normal;
+}
+.experience-institution:before {
+  content: attr(title) " @ ";
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.experience-location, .experience-date{
+   color: grey;
+}
+.experience-date-separator{
+   color: red;
+}
+.experience-location::before{
+   width:100%; height:10px; content:"In"
+}
+.experience-date::before{
+   width:100%; height:10px; content:"On"
+}
+h4{
+    margin-bottom: 0;
+}
+.experience-details{
+    padding-left: 10px;
+    font-size: 15px;
+}   
+dl{
+    display: flex;
+    flex-direction: row;
+  margin: 0 auto;
+
+}
+dt{
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 30px;
+
+}
+dd{
+    background: white;
+    color: red;
+    padding: 0px;
+    margin: 0px;
+    width: 550px;
+    height: 30px;
+}
+.contact.contact-skype .contact-value{
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 720px){
+
+    header{
+        width: 80%;
+        height: 200px;
+        float: left;  
+        padding: 20px;  
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    hgroup{
+        float: left;
+        width: 25%;
+    }
+    figure{
+        float: left;
+       width: 25%;
+    }
+    .content{
+        padding: 100px;
+        width: 80%;
+    }
+    #about{
+        float: left;
+        width: 40%;
+        height: 170px;
+    }
+    #competencies{
+        float: right;
+        width: 40%;
+        height: 320px;  
+    }
+    #experiences{
+        float: left;
+        width: 40%;
+        padding-top: 150px;
+    }
+    #education{
+        float: right;
+        width: 40%;
+    }
+    #hobbies{
+        float: left;
+        width: 40%;
+    }
+    #contact{
+        float: right;
+        width: 5    0%;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    #contact h3{
+        display: none;
+    }
+    dt{
+        background-color: red;
+        color: white;
+        width: 150px;
+        height: 30px;
+    
+    }
+    dd{
+        background: black;
+        color: red;
+        padding: 0px;
+        margin: 0px;
+        width: 550px;
+        height: 30px;
+    }
+
+}
+
+
