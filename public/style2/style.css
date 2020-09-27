@@ -45,7 +45,7 @@ section div .experience-institution{
 }
 section div .experience-type{
     float: left;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 #contact h3{
     display: none;
@@ -230,7 +230,7 @@ section h3{
     float: left;
 }
 section div{
-    padding-left: 150px;
+    padding-left: 140px;
     padding-top: 2px;
 }
 #hobbies ul{
